@@ -1,0 +1,54 @@
+/* Los vinculos se presentan por estados */
+/* :visited cuando has visitado el sitio
+link cuando estas por visitarlo*/
+/* :hover mouse sobre el vinculo */
+a.vinculo1:link {
+  color: aqua;
+}
+a.vinculo:visited {
+  color: coral;
+}
+a.vinculo1:hover {
+  color: greenyellow;
+}
+a.vinculo1:active {
+  color: blueviolet;
+}
+/* Sin estilo */
+a.vinculo2:link {
+  text-decoration: none;
+}
+a.vinculo2:visited {
+  text-decoration: none;
+}
+a.vinculo2:hover {
+  text-decoration: none;
+}
+a.vinculo2:active {
+  text-decoration: none;
+}
+/* Como boton */
+a.vinculo3:link,
+a.vinculo3:visited {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+a.vinculo3:hover,
+a.vinculo3:active {
+  background-color: red;
+}
+a.vinculo4:link,
+a.vinculo4:visited {
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+a.vinculo4:hover,
+a.vinculo4:active {
+  background-color: violet;
+}

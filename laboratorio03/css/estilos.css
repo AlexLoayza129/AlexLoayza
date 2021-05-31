@@ -1,0 +1,103 @@
+/* Esto es un comentario CSS */
+body {
+  background-color: gray;
+}
+/* Aplicamos colores a cada una de las secciones */
+#contenedor {
+  background-color: rgb(240, 194, 126);
+}
+#cabecera {
+  background-color: blue;
+}
+
+#menu {
+  background-color: red;
+}
+
+#cuerpo {
+  background-color: bisque;
+}
+
+#pie {
+  background-color: blueviolet;
+}
+/* Agregamos una imagen al fondo del parrafo */
+#parrafoimagen {
+  background-image: url("/img/foto1.jpg");
+}
+
+/* Color de transparencia para los parrafos */
+.parrafotransparencia {
+  background-color: rgb(0, 0, 0);
+  opacity: 75%;
+  /* Color para el parrafo que se note */
+  color: white;
+}
+/* Agregamos una imagen para el fondo del parrafo repitiendo*/
+
+#parrafoimagenrepetir {
+  background-image: url("/img/ima2.png");
+}
+/* Agregamos una imagen para el fondo del parrafo no repitiendo*/
+
+#parrafoimagennorepetir {
+  background-image: url("/img/ima2.png");
+  background-repeat: no-repeat;
+}
+
+#parrafoimagentamaño {
+  background-image: url("/img/ima2.png");
+  background-size: 30px;
+}
+#parrafoimagenrepetirhorizontal {
+  background-image: url("/img/ima2.png");
+  background-repeat: repeat-x;
+  background-size: 30px;
+}
+#parrafoimagenrepetirvertical {
+  background-image: url("/img/ima2.png");
+  background-repeat: repeat-y;
+  background-size: 30px;
+}
+#parrafocentrado {
+  background-image: url("/img/ima2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#parrafoimagenizquierda {
+  background-image: url("/img/ima2.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#parrafoimagenderecha {
+  background-image: url("/img/ima2.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#parrafoimagensuperior {
+  background-image: url("/img/ima2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#parrafoimageninferior {
+  background-image: url("/img/ima2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#parrafoimagensuperiorderecha {
+  background-image: url("/img/ima2.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#parrafoimageninferiorizquierda {
+  background-image: url("/img/ima2.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}

@@ -1,0 +1,28 @@
+ul {
+  background-color: gray;
+  padding: 10px;
+}
+ul li {
+  background-color: silver;
+  padding: 5px;
+  margin: 3px;
+}
+ul li ul {
+  background-color: red;
+  padding: 5px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ul li ul li {
+  background-color: aqua;
+  margin: 3px;
+}
+ul li ul li ul {
+  background-color: coral;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+ul li ul li ul li {
+  background-color: crimson;
+  color: whitesmoke;
+}

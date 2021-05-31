@@ -1,0 +1,115 @@
+/* Colores de fondo para las etiquetas de la maquetacion */
+body {
+  background-color: darkred;
+}
+.contenedor {
+  background-color: gray;
+}
+header {
+  background-color: blueviolet;
+}
+nav {
+  background-color: chocolate;
+}
+section {
+  background-color: coral;
+}
+footer {
+  background-color: darkcyan;
+}
+/* Agregamos un borde de tipo dotted */
+.borde1 {
+  border-style: dotted;
+}
+/* Agregamos un borde de tipo Dashed */
+
+.borde2 {
+  border-style: dashed;
+}
+/* Agregamos un borde de tipo solid */
+
+.borde3 {
+  border-style: solid;
+}
+/* Agregamos un borde de tipo Double */
+
+.borde4 {
+  border-style: double;
+}
+/* Agregamos un borde de tipo groove */
+.borde5 {
+  border-style: groove;
+}
+/* Agregamos un borde de tipo ridge */
+.borde6 {
+  border-style: ridge;
+}
+/* Agregamos un borde de tipo inset */
+.borde7 {
+  border-style: inset;
+}
+/* Agregamos un borde de tipo ouset  */
+/* Probando color */
+.borde8 {
+  border-style: outset;
+  border-color: blueviolet;
+}
+.borde9 {
+  border-style: none;
+}
+.borde10 {
+  border-style: hidden;
+}
+/* Agregamos un borde de tipo combinado cuando realizamos bordes combinados la sintaxis seria la sgte:
+ Para 2, border-style : (Arriba y Abajo) (Izquierda y Derecha)
+ Para 3, border-style: (Arriba) (Izquierda y Derecha ) (Abajo)
+ Para 4, border-style:(Arriba , Derecha, Abajo e Izquierda)  */
+.borde11 {
+  border-style: dotted dashed solid double;
+}
+/* Borde con anchura */
+.borde12 {
+  border-style: dotted;
+  border-width: 10px;
+}
+.borde13 {
+  border-style: dashed;
+  border-width: medium;
+}
+.borde14 {
+  border-style: solid;
+  border-width: 10px 15px 4px 7px;
+}
+.borde15 {
+  border-style: solid;
+  border-color: chocolate;
+}
+.borde16 {
+  border-style: dashed;
+  border-color: chocolate blue red violet;
+}
+/* Aplicamos el estilo solo arriba */
+.borde17 {
+  border-top-style: dashed;
+}
+.borde18 {
+  border-bottom-style: dotted;
+}
+.borde19 {
+  border-style: solid;
+}
+.borde20 {
+  border-style: double;
+}
+/* Aplicamos bordes redondeandolos with radius */
+
+.borde21 {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+}
+.borde22 {
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 15px;
+}
