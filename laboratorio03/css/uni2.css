@@ -1,0 +1,21 @@
+*{
+    text-decoration: none;
+  }
+  
+  .uni  li{
+    background-color: #aaa ;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #000;
+  }
+  
+  
+  .uni li{
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .uni li:hover{
+    background-color: black;
+    color: white;
+  }
