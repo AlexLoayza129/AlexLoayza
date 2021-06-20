@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 3</title>
+    <script>
+        //Condicionales dobles
+        // Si en caso la condicion es falsa devuelve otro valor
+
+        //Sintaxis
+        // if(condicion){
+        //     ...programas...
+        // }else{
+        //     ..programas..
+        // }
+
+        //Ejemplo 1
+        //Desarrollar una aplicacion que permita calcular el area de un triangulo si se sabe que se debe ingresar su base y su altura. si el area del triangulo es mayor a 50 se mostrara un mensaje indicando que es un triangulo grande, en caso contrario se mostrara un mensaje indicando que es un triangulo pequeño.
+
+        //¿Cuantas variables necesito?
+        // 4
+        // base , altura , area , mensaje
+
+        //De que tipo:
+         //Real y texto
+
+        var base = 0, altura = 0, area = 0, men = "";
+
+        base=parseFloat(prompt("Ingrese la base del triangulo : "));
+        altura=parseFloat(prompt("Ingrese la altura del triangulo : "));
+
+        area = (base*altura)/2;
+
+        if(area>50){
+            men = "Es un triangulo grande";
+        }else{
+            men = "Es un triangulo pequeño";
+        }
+
+        alert("El area del triangulo es : " + area);
+        alert(men);
+
+
+    //Ejemplo 2
+
+    //Desarrollar una aplicacion que permita cacular el total a pagar por una compra  de un producto, si se sabe que  se debe ingresar el precio del producto y la cantidad que se va a comprar . Si el el subtotal de la compra es mayor a 1000 se aplicara un descuento del 5% en caso contrario el descuento  sera del 2%. Si el cliente quiere factura se aplicara el 18% del  subtotal para el igv en caso contrario con boleta no aplicara nada.
+    //Mostrar todos los resultados.
+        //¿Cuantas variables necesito?
+        // 7
+        // 
+
+        //De que tipo:
+        // Real , texto
+
+        var precio = 0, cantidad = 0, des = 0, subt = 0, igv = 0, tot = 0, com = "";
+
+        precio = parseFloat(prompt("Ingrese el precio del producto: "));
+        cantidad = parseInt(prompt("Ingrese la cantidad que desea comprar: "));
+        com = prompt("Ingrese el tipo de comprobante [F] Factura o [B] Boleta");
+
+        //Realizando operaciones
+        subt = precio*cantidad;
+
+        if(subt>1000){
+            des =subt*0.05;
+        }else{
+            des = subt*0.18;
+        }
+        if(com == "f"){
+            igv=subt*0.18;
+        }else{
+            igv= 0;
+        }
+
+        tot = subt - des + igv;
+
+        alert("El subtotal es : " + subt);
+        alert("El descuento  es : " + des);
+        alert("El igv es : " +  igv);
+        alert("El total  a pagar es : " + tot);
+
+    </script>
+</head>
+<body>
+    <a href="index.html">Regresar</a><br>
+</body>
+</html>

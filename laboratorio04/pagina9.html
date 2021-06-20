@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 3</title>
+    <script>
+        //Desarrollar una aplicacion que permita calcular el sueldo final de un trabajador si se sabe que si pertenece a la categoria 2 y su turno es mañana se le aplicara un bonificacion del 7% en caso contrario no se le aplicara, ninguna bonificacion.
+        //Mostrar resultados 
+        //Variables : 5
+
+        //Tipo: Real, entero y texto 
+
+        var sb = 0  , bono = 0 , sf = 0, cat = 0 , tur = "";
+
+        sb = parseFloat(prompt("Ingrese el sueldo basico : "));
+        cat = parseInt(prompt("Ingrese la categoria : [1] [2] [3]"));
+        tur = prompt("Ingrese el turno : Mañana [M] Tarde [T] Noche [N]");
+
+        if(cat == 2 && tur == "m"){
+                bon = sb*0.07;
+        }else{
+            bon = 0;
+        }
+        sf = sb + bon;
+
+        alert("El sueldo basico es: " + sb);
+        alert("La bonificacion es : " + bon);
+        alert("El sueldo final es : " + sf)
+        
+        //Ejemplo 2 
+        //Desarrollar una aplicacion que permita ingresar 3 numeros y luego calcular cual es mayor y cual es el menor , ///Mostrar el numero mayor  y el numero menor.
+
+        //variables : 5 
+
+        //Tipo: Entero 
+
+        var n1 = 0, n2 = 0, n3 = 0, nma = 0, nme = 0;
+
+        n1 = parseInt(prompt("Ingrese el numero 1 : "));
+        n2 =parseInt(prompt("Ingrese el numero 2 : "));
+        n3 =parseInt(prompt("Ingrese le numero 3 : "));
+
+        if(n1>n2 && n1>n3){
+            nma = n1;
+        }else{
+            if(n2>n1 && n2>n3){
+                nma =n2;
+            }else{
+                nma =n3;
+            }
+        }
+        if(n1<n2 && n1<n3){
+            nme = n1;
+        }else{
+            if(n2<n1 && n2<n3){
+                nme =n2;
+            }else{
+                nme =n3;
+            }
+        }
+
+        alert("El numero mayor es : " + nma);
+        alert("El numero menor es : " + nme);
+</script>
+</head>
+<body>
+    <a href="index.html">Regresar</a><br>
+</body>
+</html>

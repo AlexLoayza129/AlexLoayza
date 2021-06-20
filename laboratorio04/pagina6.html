@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 3</title>
+    <script>
+        //Desarrollar una aplicacion que te permita ingresar 3 notas y calcular el promedio, si el promedio es mayor a 13 tendra que salir un mensaje si el alumno aprobo o desaprobó
+        //¿Cuantas variables necesito?
+        // 5
+        //n1,n2,n3 , prom , men (Mensaje)
+        var n1 = 0, n2 = 0, n3 = 0, prom = 0, men="";
+
+        n1=parseFloat(prompt("Ingrese la nota 1: "));
+        n2=parseFloat(prompt("Ingrese la nota 2: "));
+        n3=parseFloat(prompt("Ingrese la nota 3: "));
+
+        prom=(n1+n2+n3)/3;
+
+        if(prom>=13){
+            men="El alumno esta aprobado";
+        }
+
+        alert("El promedio es : " + prom);
+        alert(men);
+
+
+        //Desarrollar una aplicacion que permita calcular el sueldo final de un trabajador 
+        //si se sabe  que el sueldo basico  se ingresa,ademas si el trabajador de la categoria 3  se le calculara una bonificación del 7% y un descuento del 5% en base al sueldo basico
+
+        //¿Cuantas variables necesito?
+        // 5
+
+        //Reales y enteros
+
+        var sb = 0, bono = 0, desc = 0, cate = 0, sf = 0;
+        
+        sb = parseFloat(prompt("Ingrese el sueldo basico: "));
+        cate = parseInt(prompt("Ingrese la categoria : "));
+
+        if(cate == 3){
+            bono = sb*0.07;
+            desc = sb*0.05;
+        }
+
+        sf = sb + bono - desc;
+
+        alert("El sueldo basico es : " + sb);
+        alert("La bonificacion es : " + bono);
+        alert("El descuento es : " + desc);
+        alert("El sueldo final  es :" + sf);
+    </script>
+</head>
+<body>
+    <a href="index.html">Regresar</a><br>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Parte 2</title>
+    <script>
+        // Input (Ingresar mensaje)
+        //prompt("Mensaje");
+
+        // De texto a numero entero
+        // parseInt("texto");
+
+        // De texto a valor real
+        // parseFloat("texto");
+
+        // De numero a texto
+        //valornumero.toString();
+
+        //Ejemplos
+
+        var num1;
+        var num2;
+        var suma;
+
+        num1 = 0;
+        num2 = 0;
+        suma = 0;
+
+        num1 = parseInt(prompt("Ingrese el primer número : "));
+        num2 = parseInt(prompt("Ingrese el segundo número : "));
+
+        suma = num1 + num2;
+
+        alert("La suma es " + suma);
+        document.writeln("La suma es " + suma);
+
+        //Ejercicio 2
+        //Sacar promedios
+
+        // prom = 0;
+
+        num1 = parseFloat(prompt("Ingrese la primera nota"));
+        num2 = parseFloat(prompt("Ingrese la segunda nota"));
+        num3 = parseFloat(prompt("Ingrese la tercera nota"));
+        num4 = parseFloat(prompt("Ingrese la cuarta nota"));
+
+        prom = (num1 + num2 + num3 + num4)/4;
+    
+        alert("El promedio es : " + prom);
+
+        //Ejercicio 3
+
+        //Ingresando un nombre
+
+        var nom;
+        nom = '';
+        nom = prompt("Ingrese su nombre: ");
+
+        alert("Bievenido " + nom);
+
+        //Ejercicio 4
+        //Calculando producto
+
+        var producto = 125.80;
+        var igv = 0;
+        var costof = 0;
+        var producf = 0;
+        var cantidad = 0;
+    
+
+        alert("El valor de cada producto  es : " + producto);
+        cantidad = parseFloat(prompt("¿Cuantos productos desea comprar? : "));
+
+        igv = producto * 0.18;
+
+        alert("El valor de IGV para este producto es : " + igv);
+
+        producf = (producto + igv) * cantidad;
+        costof = producf;
+
+        alert("La compra total con costo de IGV es : " + costof);
+
+        //Ejercicio 5
+        // Calculando sueldo
+        var sueldo = 0;
+        var bono = 0;
+        var desc = 0;
+        var resul = 0;
+    
+        // sueldo = parseFloat(prompt("Ingrese el sueldo basico : "));
+        
+        bono = parseFloat(prompt("Ingrese la bonificación : "));;
+        desc = parseFloat(prompt("Ingrese el descuento : "));
+
+        sueldo = sueldo + bono;
+        sueldo = sueldo - desc;
+
+
+        alert("El sueldo final es : " + sueldo);
+
+        //Ejercicio 6
+        // Desarrollar una aplicacion que permita ingresar el numero de horas trabajadas de
+        //un empleado, si se sabe que tiene un costo por cada hora trabajada y se te pide
+        //calcular el sueldo final, si adicional se le calcula una bonificacion del 6%
+        //y un descuento del 3%. Motrar todos los resultados
+
+        ht = 0;
+        htcosto = 0;
+        sueldofinal = 0;
+        bonificación = 0;
+        descuento = 0;
+
+        ht = parseInt(prompt("¿Cuantas horas ha trabajado el empleado? : "  ));
+
+        htcosto = parseInt(prompt("¿Cuanto se le paga al trabajador por hora?: "  ));
+
+        sueldofinal = ht * htcosto;
+        bonificacion = sueldofinal * 0.06;
+        
+        alert("La bonificación es : " + bonificacion);
+
+        descuento = sueldofinal * 0.03;
+
+        alert("El descuento es : " + descuento);
+
+        sueldofinal = sueldofinal + bonificacion;
+        sueldofinal = sueldofinal - descuento;
+
+        alert("El sueldo final del trabajador es : " + sueldofinal);
+    </script>
+</head>
+<body>
+    <a href="index.html">Regresar</a><br>
+</body>
+</html>

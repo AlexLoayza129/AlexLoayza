@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Parte 1</title>
+    <script>
+        // + Suma
+        // - Resta
+        // "/" Division
+        // * Multiplicación
+
+    var num1;
+    var num2;
+    var suma;
+
+    num1 = 0;
+    num2 = 0;
+    suma = 0;
+
+    num1 = 7;
+    num2 = 6;
+
+    suma = num1 + num2;
+
+    alert("La suma es " + suma);
+    document.writeln("La suma es " + suma);
+
+
+    //Sueldo basico 1000 , bonificacion de 7% , descuento de 4% (todo con el sueldo basico) y Resultado
+
+    var sueldo = 0;
+    var bono = 0;
+    var desc = 0;
+    var resul = 0;
+    
+    sueldo = 1000;
+    
+    bono = sueldo*0.07;
+    desc = sueldo*0.04;
+
+    resul = (sueldo + bono) - desc;
+
+    alert("El descuento es : " + desc);
+
+    alert("El sueldo final es : " + resul);
+
+
+    var producto = 125.80;
+    var igv = 0;
+    var costof = 0;
+    var producf = 0;
+    
+    igv = producto*0.18;
+    producf = producto + igv;
+    costof = producf*10;
+    
+    document.writeln("El valor de cada producto  es : " + producto);
+    document.writeln("El valor del IGV es : " + igv);
+    document.writeln("El valor de cada producto con IGV es : " + producf);
+    document.writeln("La compra total con costo de IGV es : " + costof);
+    </script>
+</head>
+<body>
+    <a href="index.html">Regresar</a><br>
+</body>
+</html>

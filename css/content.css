@@ -76,7 +76,7 @@ h2{
 .subcajade2{
     background-color: rgb(219, 214, 214);
     width: 90%;
-    height: 90%;
+    height: 80%;
     border: 1px solid #000;
     margin-left: 5%;
     margin-top: 2%;
@@ -85,10 +85,10 @@ h2{
 .vinculos{
     background-color: white;
     width: 40%;
-    height: 15%;
+    height: 12%;
     text-align: center;
     /* (Arriba , Derecha, Abajo e Izquierda) */
-    padding: 12px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
     border: #000 solid 1px;
     margin-left: 29%;
     font-family: 'Roboto', sans-serif;

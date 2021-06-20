@@ -2,6 +2,10 @@
   text-decoration: none;
 }
 
+body{
+  background-color: rgb(240, 233, 233);
+}
+
 .uni  li{
   background-color: #aaa ;
   width: 200px;
