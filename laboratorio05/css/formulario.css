@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: beige;
+}
+
+
+.contenedor{
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    border: 3px solid black;
+    background-color: #79d8d8;
+    padding: 20px;
+}
+
+h1{
+text-align: center;
+}
+
+.contenedor form{
+    margin: auto;
+    display: block;
+    width: 400px;
+    border: 3px solid black;
+    background-color: rgb(83, 79, 79);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.contenedor form label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.contenedor form input[type="number"],
+.contenedor form input[type="text"],
+.contenedor form input[type="password"],
+.contenedor form input[type="date"]{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    display: block;
+    border-bottom:rgb(241, 239, 239) 3px solid;
+    border-radius: 10px;
+}
+
+.contenedor form select{
+    display: block;
+    margin: auto;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(97, 93, 93);
+}
+
+.contenedor form input[type="number"]:focus,
+.contenedor form input[type="text"]:focus{
+    border: none;
+}
+
+.contenedor form input[type="button"]{
+    color: blue;
+    background-color: #fff;
+    width: 100px;
+    border-radius: 30px;
+    height: 40px;
+    border: 1px solid #000;
+}
+
+.contenedor form input[type="button"]:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.contenedor form input[type="number"]::placeholder,
+.contenedor form input[type="text"]::placeholder,
+.contenedor form input[type="password"]::placeholder,
+.contenedor form input[type="password"]::placeholder{
+    text-align: center;
+}
+
+
+
+.contenedor form input[type="number"]:hover,
+.contenedor form input[type="text"]:hover,
+.contenedor form input[type="password"]:hover{
+border-bottom: 4px rgb(63, 16, 173) solid;
+}
+
+
+/* ----------------Tabla----------------------- */
+
+table{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: rgb(236, 91, 65) 5px solid;
+}
+
+table thead th{border:rgb(236, 91, 65) 3px solid;border-style: groove;}
+
+table tbody tr td{border: rgb(236, 91, 65) 3px solid; border-radius: 3px;border-style: groove;}

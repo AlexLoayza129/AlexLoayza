@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 1</title>
+</head>
+<body>
+    <!-- Firebase -->
+
+    <!-- Firebase pertenece a google, es una pataforma en la nube para el desarrollo de aplicaciones web y móviles
+    esta disponible para plataformas android, iOS y Web. -->
+
+    <!-- Fue creada en el 2011 y paso a ser comprada por Google en el 2014 -->
+
+    <!-- Su función escencial es hacer mas sencilla la creación y desarrollo de aplicaciones web como aplicaciones móviles, procurando que el trabajo sea más rapido sin  perder calidad. -->
+
+    <!-- Tiene una variada gama de herramientas las cuales son de facil uso, todo dentro de la misma plataforma, las cuales podemos agrupar en: Desarrollo, Crecimiento, Monetización y Análisis.-->
+
+    <!-- Desarrollo -->
+
+    <!-- Conocido como Develop en Firebase, incluye los servicios necesarios para el desarrollo de un proyecto de aplicación movil o web. -->
+
+    <!-- Dentro de las herramientas de desarrollo podemos encontrar el RealTime Database. Es una de las herramientas mas destacadas y escenciales de Firebase son las bases de datos en tiempo real. Estas se alojan en la nube, son de tiempo No SQL y almacenan los datos  como JSON -->
+
+    <!-- Existen 2 tipos de base de datos: -->
+
+    <!-- Las bases de datos relacional, donde todas sus tablas estan relacionadas entre si -->
+
+    <!-- Las bases de datos  no relacional, donde todas sus tablas no estan relacionadas entre si, por lo general se les llama No SQL y utilizan JSON para almacenar la informacion. -->
+
+    <!-- JSON: Viene de las Siglas Java Script Object Notation, se trata de un formato para guardar o intercambiar informacion que cualquier persona pueda leer. Sus archivos se guardan con extension ".json" -->
+
+    <form action="">
+        <h1>Registro de Datos</h1>
+        <label for="txtNom">Nombres: </label>
+        <input type="text" id="txtNom" name="txtNom" placeholder="Ingrese su nombre">
+        <br>
+        <label for="txtApe">Apellidos: </label>
+        <input type="text" id="txtApe" name="txtApe" placeholder="Ingrese su apellido">
+        <br>
+        <label for="txtCor">Correo: </label>
+        <input type="text" id="txtCor" name="txtCor" placeholder="Ingrese su correo.">
+        <br>
+        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+    </form>
+    <hr>
+    <table id="tbRegistro">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="js/bibliotecaregistro.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>
