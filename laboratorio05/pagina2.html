@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase - Parte 1</title>
     <link rel="stylesheet" type="text/css" href="css/formulario.css">
-    <script src="js/producto.js"></script>
     <script src="js/producto2.js"></script>
 </head>
 <body>
@@ -30,9 +29,19 @@
         <label for="txtCan">Cantidad</label>
         <input type="number" name="txtCan" id="txtCan" placeholder="Cantidad del producto">
         <br>
-        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar" onclick="Mostrar()">
+        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
     </form>
+    <table id="tabla1">
+        <thead>
+            <th>Nombres</th>
+            <th>Precio</th>
+            <th>Categoria</th>
+            <th>Cantidad</th>
+        </thead>
+        <tbody></tbody>
+    </table>
     <a href="index.html">Regresar</a><br>
 </div>
+<script src="js/producto.js"></script>
 </body>
 </html>

@@ -33,7 +33,7 @@ function MostrarRegistro(){
     }
 }
 
-
+s
 
 // creamos un procedimiento para registrar los datos
 
